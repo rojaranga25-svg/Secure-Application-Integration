@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Portal</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 30px auto; padding: 20px; }
+    .card { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+    form { background: #f9f9f9; padding: 15px; margin-top: 20px; border-radius: 5px; }
+    input, select, button { display: block; width: 100%; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+    button { background: #007bff; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Available Internships</h1>
+  <div id="status">Loading...</div>
+  <div id="list"></div>
+
+  <form id="form">
+    <h3>Apply Here</h3>
+    <select id="internshipSelect" required><option value="">Select Internship</option></select>
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
